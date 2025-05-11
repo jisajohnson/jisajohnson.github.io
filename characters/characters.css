@@ -1,0 +1,77 @@
+:root {
+    --primary: #3498db;
+    --secondary: #2ecc71;
+    --accent: #f1c40f;
+    --dark: #2c3e50;
+    --light: #ecf0f1;
+    --anemo: #74c2a8;
+    --geo: #fab632;
+    --electro: #af8ec1;
+    --dendro: #a5c83b;
+    --hydro: #4cc2f1;
+    --pyro: #ef7a35;
+    --cryo: #9fd6e3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: url('../images\ &\ videos/genshin_cursor.png'), auto;
+}
+
+body{
+    background-image: url();
+}
+
+.Mondstadt-characters{
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    /* repeat(auto-fill, minmax(250px, 1fr)); */
+    gap: 24px;
+}
+
+.character-box {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.character-box:hover {
+    transform: translateY(-5px);
+}
+
+.character-info {
+    padding: 16px;
+}
+
+.character-name {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.character-vision {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.anemo { background-color: var(--anemo); }
+.geo { background-color: var(--geo); }
+.electro { background-color: var(--electro); }
+.dendro { background-color: var(--dendro); }
+.hydro { background-color: var(--hydro); }
+.pyro { background-color: var(--pyro); }
+.cryo { background-color: var(--cryo); }
+
+.character-description {
+    font-size: 14px;
+    color: #666;
+}

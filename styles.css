@@ -1,0 +1,101 @@
+*{
+    cursor: url('images\ &\ videos/genshin_cursor.png'), auto; /* changed the default cursor to the game related */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* changed the fonts */
+} 
+
+body{
+    margin: 0px; /* removed the margins of the page */
+}
+
+#background_video{
+    position: relative; 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* to bring the bg video behind the text */
+}
+
+header{
+    cursor: url('images\ &\ videos/genshin_cursor.png'), auto; /* to ensure the cursor effect is there for everything */
+}
+
+nav{
+    text-align: center; /* aligned the text to the center */
+    background-color: hsla(0, 100%, 0%, 0.7); /* gives a translucent effect */
+    cursor: url('images\ &\ videos/genshin_cursor.png'), auto;
+    top: 0; 
+    width: 100%;
+    z-index: 100;
+    position: fixed; /* to ensure that the nav bar is fixed even while scrolling */
+    height: 66px;
+}
+
+.logo{
+    text-align: left;
+    padding-right: 100px;
+    margin-left: 5px;
+}
+
+nav a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: gray;
+    cursor: url('images\ &\ videos/genshin_cursor.png'), auto;
+}
+
+nav a:hover{
+    color:white;
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    cursor: url('images\ &\ videos/genshin_cursor.png'), auto;
+}
+
+.download{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.download-left{
+    align-self: center;
+    box-sizing: border-box;
+    margin-right: 12px;
+    position: relative;
+    visibility: visible;
+}
+
+.download-top{
+    align-self: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+}
+
+.download-down{
+    align-self: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+}
+
+.footer{
+    text-align: center;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    cursor: url('images\ &\ videos/genshin_cursor.png'), auto;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
