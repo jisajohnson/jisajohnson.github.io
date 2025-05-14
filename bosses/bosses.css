@@ -25,3 +25,14 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media (max-width: 768px) {
+  .dvalin-description, 
+  .azhdaha-description, 
+  .raidenpuppet-description, 
+  .theknave-description{
+    width: 90%;
+    padding: 10px;
+    font-size: 13px;
+  }
+}

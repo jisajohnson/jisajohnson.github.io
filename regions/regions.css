@@ -24,3 +24,26 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media (max-width: 768px) {
+  .mondstadt-description img, 
+  .liyue-description img, 
+  .inazuma-description img, 
+  .sumeru-description img, 
+  .fontaine-description img, 
+  .natlan-description img {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .mondstadt-description, 
+  .liyue-description, 
+  .inazuma-description, 
+  .sumeru-description, 
+  .fontaine-description, 
+  .natlan-description {
+    width: 90%;
+    padding: 10px;
+    font-size: 13px;
+  }
+}

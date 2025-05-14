@@ -80,3 +80,59 @@ h2{
     font-size: 14px;
     color: white;
 }
+
+@media (max-width: 768px) {
+    /* Adjust header and navigation */
+    header nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    header nav a {
+        margin: 5px 0;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+    
+    /* Change grid layout for character cards */
+    .Mondstadt-characters {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+    
+    /* Adjust character box sizing */
+    .character-box {
+        max-width: 100%;
+    }
+    
+    .character-box img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Improve character info readability */
+    .character-info {
+        padding: 12px;
+    }
+    
+    .character-name {
+        font-size: 20px;
+    }
+    
+    .character-description {
+        font-size: 15px;
+    }
+    
+    /* Adjust footer for small screens */
+    footer {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    footer img {
+        max-width: 90%;
+        height: auto;
+    }
+}
