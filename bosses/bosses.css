@@ -1,14 +1,15 @@
+/* Aligned text to the center and the text color as white */
 body{
     text-align: center;
     color: white;
 }
 
+/* Set the position to relative */
 .Dvalin, .Azhdaha, .RaidenPuppet, .TheKnave{
   position: relative;
-  text-align: center;
-  color: white;
 }
 
+/* For the black transparent bg effect to make the text and bg seen */
 .overlay{
   position: absolute; 
   bottom: 0; 
@@ -19,14 +20,20 @@ body{
   opacity:1;
 }
 
-.dvalin-description, .azhdaha-description, .raidenpuppet-description, .theknave-description{
+/* aligns the text to the center and brings the text infront of the bg image */
+.dvalin-description, 
+.azhdaha-description, 
+.raidenpuppet-description, 
+.theknave-description{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+/* For mobile devices */
 @media (max-width: 768px) {
+  /* makes the text smaller in mobiles */
   .dvalin-description, 
   .azhdaha-description, 
   .raidenpuppet-description, 

@@ -1,53 +1,58 @@
+/* Sets the box sizing as border box which has padding and border for an element  */
 *{
     box-sizing: border-box;
 }
 
+/* removes the default margin and sets the bg color as black */
 body {
   margin: 0;
   background-color: black;
 }
 
+/* added margin on the top since the nav bar covers the images */
 main{
   margin-top: 70px;
 }
 
+/* gives a flexible layout */
 .row {
-  display: -ms-flexbox; /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* gives flex for the column as well so that it moves according to the size of the website */
 .column {
-  -ms-flex: 25%; /* IE10 */
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
 }
 
+/* aligns the image in the center */
 .column img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 
+/* When the mouse is hovered, the image pops a bit */
 .column img:hover {
   transform: scale(1.02, 1.02);
 }
 
+/* for tablets */
 @media screen and (max-width: 800px) {
+  /* makes it into 2 columns */
   .column {
-    -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
   }
 }
 
+/* for mobile phones */
 @media screen and (max-width: 600px) {
+  /* there is only one column and the images look big */
   .column {
-    -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
